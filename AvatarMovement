@@ -1,0 +1,41 @@
+#include <iostream>
+
+class PlayerAvatar {
+public:
+    void moveForward() {
+        std::cout << "Player avatar moved forward." << std::endl;
+    }
+
+    void moveBackward() {
+        std::cout << "Player avatar moved backward." << std::endl;
+    }
+
+    void jump() {
+        std::cout << "Player avatar jumped." << std::endl;
+    }
+
+    void moveLeft() {
+        std::cout << "Player avatar moved left." << std::endl;
+    }
+
+    void moveRight() {
+        std::cout << "Player avatar moved right." << std::endl;
+    }
+
+    void crouch() {
+        std::cout << "Player avatar crouched." << std::endl;
+    }
+};
+
+int main() {
+    PlayerAvatar myPlayer;
+
+    myPlayer.moveForward();
+    myPlayer.moveBackward();
+    myPlayer.jump();
+    myPlayer.moveLeft();
+    myPlayer.moveRight();
+    myPlayer.crouch();
+
+    return 0;
+}
